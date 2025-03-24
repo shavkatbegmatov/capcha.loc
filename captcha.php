@@ -29,6 +29,13 @@ for ($i = 0; $i < 5; $i++) {
     imageline($image, rand(0,130), rand(0,40), rand(0,130), rand(0,40), $line_color);
 }
 
+// Shovqinli nuqtalar
+for ($i = 0; $i < 1000; $i++) {
+    $noise_color = imagecolorallocate($image, rand(150,255), rand(150,255), rand(150,255));
+    imagesetpixel($image, rand(0,130), rand(0,40), $noise_color);
+}
+
+
 // Matn
 $font_size = 5;
 $x = 10;
